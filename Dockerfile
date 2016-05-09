@@ -27,8 +27,8 @@ RUN { \
 
 VOLUME /var/www/html
 
-ENV DRUPAL_VERSION 8.1.0
-ENV DRUPAL_SHA1 74386c146b878064bf159eb1ff48ca15d5cae494
+ENV DRUPAL_VERSION 8.1.1
+ENV DRUPAL_SHA1 a697981cb1abb160f5b6f837932471689075d80d
 
 RUN curl -o drupal.tar.gz -SL https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz \
 	&& echo "${DRUPAL_SHA1} *drupal.tar.gz" | sha1sum -c - \
